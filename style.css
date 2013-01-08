@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+#container {
+	width: 23%;
+	height: 250px;
+	margin-top: 2%;
+	margin-left: 2%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #ccc;
+}
+
+#container #display {
+	width: 95%;
+	height: 25%;
+	background-color: #eee;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	margin: 3% auto;
+}
+
+#container #display #equation {
+	width: 85%;
+	height: 45%;
+	border: none;
+	outline: none;
+	padding-left: 0.5em;
+	padding-top: 0.1em;
+	font-size: 24px;
+}
+
+#container #display #resultBox {
+	background-color: #eee;
+	width: 97%;
+	height: 45%;
+	border: none;
+	text-align: right;
+	outline: none;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#container #functionality {
+	width: 95%;
+	margin: 4% auto;
+	position: relative;
+}
+
+.dimension {
+	width: 18.5%;
+	height: 28px;
+	margin-bottom: 2.5%;
+}
+
+/* sets all functionalities background color to #888 */
+/*sets all remove functionalities background color to #888 */
+#container #functionality input[name=appearFuncs], #container #functionality input[name=appearRem] { 
+	background-color: #888;
+}
+
+/* sets the numbers and dot background color to #eee */
+#container #functionality input[name=appear] { 
+	background-color: #eee;
+}
+
+#container #functionality input[name=appear]:hover { 
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/* sets round corners to all buttons */
+#container #functionality input[type=button] { 
+	border-radius: 8px;
+	border: 1px solid #000;
+}
+
+#container #functionality input[type=button]:hover { 
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#container #functionality #numZero {
+	width: 39%;
+	height: 25px;
+}
+
+#container #functionality #equals {
+	height: 36%;
+	width: 18.5%;
+	position: absolute;
+	right: 0px;
+	bottom: 3%;
+}
